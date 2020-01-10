@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="homeType" optional="YES" attributeType="String"/>
+        <relationship name="home" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Home" inverseName="category" inverseEntity="Home"/>
+    </entity>
+    <entity name="Home" representedClassName="Home" syncable="YES">
+        <attribute name="bath" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="bed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary" storedInTruthFile="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sqft" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="home" inverseEntity="Category"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="home" inverseEntity="Location"/>
+        <relationship name="status" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Status" inverseName="home" inverseEntity="Status"/>
+    </entity>
+    <entity name="List" representedClassName="List" syncable="YES">
+        <attribute name="nameList" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <relationship name="home" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Home" inverseName="location" inverseEntity="Home"/>
+    </entity>
+    <entity name="Status" representedClassName="Status" syncable="YES">
+        <attribute name="isForSale" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="home" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Home" inverseName="status" inverseEntity="Home"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="regNO" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-303.76953125" positionY="127.5546875" width="128" height="73"/>
+        <element name="Category" positionX="177.6015625" positionY="0.9140625" width="128" height="73"/>
+        <element name="Home" positionX="-55.859375" positionY="190.53515625" width="128" height="178"/>
+        <element name="List" positionX="-295.8203125" positionY="-77.984375" width="128" height="58"/>
+        <element name="Location" positionX="185.140625" positionY="193.42578125" width="128" height="73"/>
+        <element name="Status" positionX="-299.56640625" positionY="254.5703125" width="128" height="73"/>
+        <element name="Student" positionX="-289.30859375" positionY="13.3984375" width="128" height="103"/>
+    </elements>
+</model>

@@ -1,0 +1,94 @@
+{
+    "home": [{
+        "city" :  "chennai",
+        "price" : 34325687,
+        "bed" : 1,
+        "bath" : 1,
+        "sqft" : 1200,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "Batchelore"
+        },
+        "status" : {
+            "isForSale" : false
+        }
+    },{
+        "city" :  "AnnaNager",
+        "price" : 38735687,
+        "bed" : 2,
+        "bath" : 2,
+        "sqft" : 1010,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "family"
+        },
+        "status" : {
+            "isForSale" : true
+        }
+    },{
+        "city" :  "ashokaNager",
+        "price" : 1009687,
+        "bed" : 1,
+        "bath" : 2,
+        "sqft" : 800,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "joinFaimly"
+        },
+        "status" : {
+            "isForSale" : false
+        }
+    },{
+        "city" :  "T.Nager",
+        "price" : 17909687,
+        "bed" : 1,
+        "bath" : 3,
+        "sqft" : 900,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "Faimly"
+        },
+        "status" : {
+            "isForSale" : true
+        }
+    },{
+        "city" :  "raja.Nager",
+        "price" : 8009687,
+        "bed" : 2,
+        "bath" : 1,
+        "sqft" : 1500,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "join Faimly"
+        },
+        "status" : {
+            "isForSale" : false
+        }
+    },{
+        "city" :  "omr",
+        "price" : 909909887,
+        "bed" : 2,
+        "bath" : 2,
+        "sqft" : 1500,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "guest House"
+        },
+        "status" : {
+            "isForSale" : true
+        }
+    },{
+        "city" :  "ECR",
+        "price" : 109909887,
+        "bed" : 3,
+        "bath" : 1,
+        "sqft" : 1230,
+        "image" : "Playimg.jpeg",
+        "category" : {
+            "homeType" : "guest House"
+        },
+        "status" : {
+            "isForSale" : false
+        }
+    }]
+}
